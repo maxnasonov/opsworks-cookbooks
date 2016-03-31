@@ -43,7 +43,7 @@ server {
   location / {
     root   <%= @application[:absolute_document_root] %>;
     index  index.html index.htm index.php;
-    error_page 404 =200 /index.html;
+    error_page 404 =503 /index.html;
   }
 
   # Block all svn access
